@@ -7,5 +7,5 @@
          ["nothing" "ever" "happens"])))
 
 (deftest default-stem
-  (is (= (stem "the hungry dog hungrily jumped over the angry moon with a hunger, jumping with anger.")
-         ["hungri" "hungrili" "jump" "over" "angri" "moon" "with" "hunger" "jump" "with" "anger"])))
+  (is (= (stems "the hungry dog hungrily jumped over the angry moon with a hunger, jumping with anger.")
+         ["hungri" "dog" "hungrili" "jump" "over" "angri" "moon" "with" "hunger" "jump" "with" "anger"])))

@@ -55,8 +55,8 @@
       expand-hyphenated-words
       remove-excluded-words))
 
-(defn stem
+(defn stems
   "Stem all words in a phrase or sentence, with reference to `*max-` and `*min-word-length*` and `*excluded-words*`."
-  ([phrase] (stem phrase default-stemmer))
+  ([phrase] (stems phrase default-stemmer))
   ([phrase stemmer-func]
      (map stemmer-func (tokenise phrase))))
