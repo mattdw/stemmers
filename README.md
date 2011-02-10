@@ -2,6 +2,8 @@
 
 A collection of stemmers in Clojure, ready to plug into your own code.
 
+<http://clojars.org/stemmers>
+
 ## Usage
 
 All stemmers export a `stem` top-level function, which takes a single
