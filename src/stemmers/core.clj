@@ -12,15 +12,15 @@
 (def default-stemmer ^{:private true} stemmers.porter/stem)
 
 ;; Set of specific words to exclude from stemming.
-(def *excluded-words*
+(def ^:dynamic *excluded-words*
   #{"the" "and" "was" "are" "not" "you" "were" "that" "this" "did"
     "etc" "there" "they" "our" "their"})
 
 ;; Ignore words shorter than this.
-(def *min-word-length* 3)
+(def ^:dynamic *min-word-length* 3)
 
 ;; Ignore words longer than this.
-(def *max-word-length* 30)
+(def ^:dynamic *max-word-length* 30)
 
 (defn excluded-word?
   "`true` if `word` matches our exclusion criteria."
